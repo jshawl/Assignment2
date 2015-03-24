@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LUb-Ej-wn6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LUb-Ej-wn6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="t4l-vm-mkT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="LUb-Ej-wn6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xv2-nr-6ZG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -16,7 +17,6 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Uab-Ox-Fgh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6" y="-290"/>
         </scene>
@@ -69,6 +69,12 @@
                                 <state key="normal" title="Generate text!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Button:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6bf-IV-z8C"/>
+                                    <action selector="greet_person:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z5c-5I-yJn"/>
+                                    <action selector="say_can_drink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Joq-EX-eV1"/>
+                                    <action selector="say_can_drink_2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ath-qz-2Pb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -90,6 +96,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="age" destination="HD3-Of-BAd" id="j84-dz-tfg"/>
+                        <outlet property="button" destination="vvU-j8-0it" id="7GB-jC-YhH"/>
+                        <outlet property="name" destination="dvu-Gz-gU3" id="Z6E-CD-q2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
