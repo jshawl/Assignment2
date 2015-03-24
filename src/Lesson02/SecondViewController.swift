@@ -15,7 +15,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var sum: UILabel!
     @IBAction func add(sender: AnyObject) {
 
-        //let total:Int = (sum.text!.toInt()! + number_input.text!.toInt()!)
+        var soFar:Int = sum.text!.toInt()!
+        var total:Int = soFar + number_input.text.toInt()!
         //sum.text = "\(total)"
     }
 }
