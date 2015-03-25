@@ -15,15 +15,16 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var age: UITextField!
     
+    @IBOutlet weak var output: UILabel!
     @IBAction func Button(sender: AnyObject) {
-        name.text = "Hello world!"
+        output.text = "Hello world!"
     }
     
     /*
     TODO two: Connect the ‘name’ and ‘age’ text boxes to this class. Hook up the button to a NEW function (in addition to the function previously defined). That function must look at the string entered in the text box and print out “Hello {name}, you are {age} years old!”
     */
     @IBAction func greet_person(sender: AnyObject) {
-        name.text = "Hello \(name), you are \(age) years old!"
+        output.text = "Hello \(name.text), you are \(age.text) years old!"
     }
     
     /*
@@ -32,13 +33,13 @@ class FirstViewController: UIViewController {
     @IBAction func say_can_drink(sender: AnyObject) {
         var years:Int? = age.text.toInt()
         if years > 15 {
-          name.text = name.text + " You can drive."
+          output.text = name.text + " You can drive."
         }
         if years > 17 {
-            name.text = name.text + " You can vote."
+            output.text = name.text + " You can vote."
         }
         if years > 20 {
-          name.text = name.text + " You can drink."
+          output.text = name.text + " You can drink."
         }
     }
     
@@ -48,13 +49,13 @@ class FirstViewController: UIViewController {
     @IBAction func say_can_drink_2(sender: AnyObject) {
         var years:Int? = age.text.toInt()
         if years > 20 {
-            name.text = name.text + " You can drive, vote and drink."
+            output.text = name.text + " You can drive, vote and drink."
         }
         if years > 18 && years < 21 {
-            name.text = name.text + " You can drive and vote."
+            output.text = name.text + " You can drive and vote."
         }
         if years > 16 && years < 18 {
-            name.text = name.text + " You can drive."
+            output.text = name.text + " You can drive."
         }
         
     }

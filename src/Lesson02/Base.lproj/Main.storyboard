@@ -7,16 +7,16 @@
         <!--Navigation Controller-->
         <scene sceneID="t4l-vm-mkT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="LUb-Ej-wn6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xv2-nr-6ZG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Uab-Ox-Fgh"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cqy-uS-h8q"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIE-6a-Lma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6" y="-290"/>
         </scene>
@@ -98,8 +98,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="age" destination="HD3-Of-BAd" id="j84-dz-tfg"/>
-                        <outlet property="button" destination="vvU-j8-0it" id="7GB-jC-YhH"/>
                         <outlet property="name" destination="dvu-Gz-gU3" id="Z6E-CD-q2K"/>
+                        <outlet property="output" destination="v2W-sh-fBn" id="Bgk-aG-Eto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -135,7 +135,7 @@
                                     <constraint firstAttribute="height" constant="30" id="tbY-jd-QkM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLG-wH-QXc">
                                 <rect key="frame" x="285" y="195" width="30" height="30"/>

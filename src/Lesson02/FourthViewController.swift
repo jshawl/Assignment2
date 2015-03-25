@@ -19,12 +19,13 @@ class FourthViewController: UIViewController {
     @IBOutlet weak var output: UILabel!
     @IBAction func calculate(sender: AnyObject) {
         var fib:[Int] = []
-        let stopAt = input.text.toInt()
-        fib[0] = 0
-        fib[1] = 1
+        let stopAt = input.text.toInt() ?? 0
+        fib += [0, 1]
         for var i = 2; i < stopAt; i++ {
-          fib[i] = fib[i-2] + fib[i-1]
+            let indexOne = i - 2
+            let indexTwo = i - 1
+            fib += [fib[indexTwo] + fib[indexOne]]
         }
-        output.text = "\(fib[-1])"
+        output.text = "\(fib[stopAt-1])"
     }
 }
